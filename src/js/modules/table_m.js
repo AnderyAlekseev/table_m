@@ -25,7 +25,7 @@ class Table {
                 }
                 tblHead.appendChild(row);
                 tbl.appendChild(tblHead);
-                this.row -= 1;
+                // this.row -= 1;
             }
         }
         // TBODY        
@@ -76,7 +76,7 @@ function TableFillFromArray(DataArr, htmlTable) {
                     tableRows[indxRow].childNodes[indxCel].appendChild(Datacell);
                 }
             }else{
-                console.log('TableFillFromArray > Datacell - ', Datacell, 'type - ', typeof(Datacell));
+                // console.log('TableFillFromArray > Datacell - ', Datacell, 'type - ', typeof(Datacell));
             }
         });
     });
@@ -121,7 +121,6 @@ class testForm {
         form.appendChild(input);
         if( this.labelBegin){
             const labelBegin = document.createElement('label');
-            // labelBegin.innerHTML = this.labelBegin;
             textNod = document.createTextNode(this.labelBegin);
             labelBegin.appendChild(textNod);
             input.insertAdjacentHTML("beforebegin", labelBegin);
@@ -132,7 +131,6 @@ class testForm {
             labelAfter.appendChild(textNod);
             input.insertAdjacentHTML("afterend", labelAfter);
         }
-        
         wrapp.appendChild(form);
         return wrapp;
     }

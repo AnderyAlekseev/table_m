@@ -1,0 +1,31 @@
+@import 'lib/_bootstrap-reboot.min';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content{
+    padding: 40px;
+    max-width: 1200px;
+    height: 100%;
+    background-color: #586472;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    table{
+        background-color: #1d314a;
+        box-shadow: 10px 10px 10px #23272d;
+        padding: 48px;
+        width: 100%;
+        thead{
+            border-bottom: 1px solid #fff;
+        }
+    }
+}
